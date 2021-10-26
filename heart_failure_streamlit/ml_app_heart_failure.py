@@ -7,7 +7,7 @@ import streamlit as st
 
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder, RobustScaler, LabelEncoder
+from sklearn.preprocessing import OneHotEncoder, StandardScaler, LabelEncoder
 
 
 import plotly.express as px
@@ -39,7 +39,7 @@ def building_models(df):
 
     ## Transformer Pipeline
     num_transformer = Pipeline(steps=[
-        ('scaler', RobustScaler())
+        ('scaler', StandardScaler())
     ])
 
     cat_transformer = Pipeline(steps=[
