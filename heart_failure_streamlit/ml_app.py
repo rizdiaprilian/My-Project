@@ -16,7 +16,7 @@ import plotly.express as px
 import plotly.figure_factory as ff
 from classification_engine import classification
 from classifier_curves import eval_curves
-from postgre_func import connect, postgresql_to_dataframe
+from postgre_con import connect, postgresql_to_dataframe
 
 st.set_page_config(
     page_title="Heart Failure",
