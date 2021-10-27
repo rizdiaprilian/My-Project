@@ -22,6 +22,9 @@ def connect():
     print("Connection successful")
     return conn
 
+# Perform query.
+# Uses st.cache to only rerun when the query changes or after 10 min.
+@st.cache(ttl=600)
 def postgresql_to_dataframe(conn, select_query, column_names):
     """
     Tranform a SELECT query into a pandas dataframe
