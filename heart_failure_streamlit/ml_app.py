@@ -80,7 +80,7 @@ def main():
     "port":"5432",
     "database":"heart_failure"
 }
-    conn = connect(param_dic)
+    conn = connect()
 
     # Connect to the database
 
