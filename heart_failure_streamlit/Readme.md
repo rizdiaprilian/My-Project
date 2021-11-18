@@ -1,4 +1,4 @@
-This project contains what my machine learning in case heart failure done in python and streamlit. Some basic implementation of object oriented programming are applied here.
+This project demonstrate how machine learning classification applied in heart failure done in python and streamlit. Some basic concepts of object oriented programming are applied here.
 Dataset used is available in kaggle https://www.kaggle.com/andrewmvd/heart-failure-clinical-data. 
 
 Credit for author Davide Chicco, Giuseppe Jurman in his research 
